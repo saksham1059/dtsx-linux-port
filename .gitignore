@@ -1,0 +1,31 @@
+/build/
+__pycache__/
+*.pyc
+*.o
+*.d
+*.so
+measurements/_*.wav
+/desktop/target/
+/desktop/frontend/node_modules/
+/desktop/frontend/dist/
+/desktop/gen/
+/desktop/*.rpm
+/desktop/*.AppImage
+/.tools/
+/node_modules/
+/analysis/
+
+# OEM binaries, raw profile blobs, and licenses are retained locally as
+# reverse-engineering evidence. They are deliberately not part of the public
+# clean-room implementation.
+/evidence/**
+!/evidence/SHA256SUMS
+
+/.tools/
+
+/PROJECT_HANDOVER.md
+/PROJECT_STATUS.md
+/reports/
+/research/
+/rea-mcp-bundle/
+/docs/

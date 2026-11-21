@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "DTS Control Center",
+  "version": "0.1.0",
+  "identifier": "org.dtsx.control-center",
+  "build": {
+    "beforeDevCommand": "npm --prefix frontend run dev",
+    "beforeBuildCommand": "npm --prefix frontend run build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../frontend/dist"
+  },
+  "app": {
+    "windows": [{ "title": "DTS Control Center", "width": 1280, "height": 780, "minWidth": 960, "minHeight": 640 }],
+    "security": { "csp": "default-src 'self'; connect-src 'self' http://localhost:5173; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:" }
+  },
+  "bundle": { "active": true, "targets": ["rpm"], "icon": ["icons/icon.png"], "linux": { "appimage": { "bundleMediaFramework": false } } }
+}

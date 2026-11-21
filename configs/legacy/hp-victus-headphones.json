@@ -1,0 +1,22 @@
+{
+  "name": "HP Victus 15 / ALC245 headphones (HPEQ-inspired)",
+  "evidence_level": "independent reconstruction; HPEQ blob not decoded",
+  "fs": 48000,
+  "hpf_hz": 22.0,
+  "hpf_q": 0.7071,
+  "eq_f": [ 30.0, 110.0, 900.0, 3500.0, 9000.0 ],
+  "eq_q": [ 0.7, 0.9, 1.0, 1.1, 0.8 ],
+  "eq_g": [ 2.0, 1.0, 0.0, 1.0, -1.0 ],
+  "bass_amount": 0.10,
+  "bass_drive": 1.1,
+  "bass_lo": 90.0,
+  "bass_hp": 30.0,
+  "loudness_volume": 0.4,
+  "loudness_amount": 0.4,
+  "width": 0.95,
+  "crossfeed": 0.25,
+  "limiter_ceiling_db": -1.5,
+  "limiter_attack_ms": 4.0,
+  "limiter_release_ms": 90.0,
+  "makeup_db": 0.0
+}
