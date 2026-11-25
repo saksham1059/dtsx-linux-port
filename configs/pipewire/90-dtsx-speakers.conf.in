@@ -1,0 +1,32 @@
+# dtsx — virtual speaker sink running the independent DTS:X-inspired chain.
+# Installed by scripts/install.sh. Delete this file (or run uninstall.sh) to disable.
+context.modules = [
+    { name = libpipewire-module-filter-chain
+      args = {
+        node.description = "DTS:X-inspired Speakers"
+        media.name = "DTS:X-inspired Speakers"
+        filter.graph = {
+          nodes = [
+            { type = ladspa
+              name = dtsx
+              plugin = "dtsx_ladspa"
+              label = "dtsx_speakers"
+              control = { "Bypass" = 0.0 }
+            }
+          ]
+        }
+        capture.props = {
+          node.name = "effect_input.dtsx_speakers"
+          media.class = Audio/Sink
+          audio.channels = 2
+          audio.position = [ FL FR ]
+        }
+        playback.props = {
+          node.name = "effect_output.dtsx_speakers"
+          node.passive = true
+          audio.channels = 2
+          audio.position = [ FL FR ]
+        }
+      }
+    }
+]

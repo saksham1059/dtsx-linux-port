@@ -1,0 +1,16 @@
+/build/
+__pycache__/
+*.pyc
+*.o
+*.d
+*.so
+measurements/_*.wav
+/analysis/
+/evidence/
+/reports/
+/desktop/target/
+/desktop/frontend/node_modules/
+/desktop/frontend/dist/
+/desktop/gen/
+/desktop/*.rpm
+/desktop/*.AppImage
