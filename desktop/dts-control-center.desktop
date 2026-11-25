@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=DTS Control Center
+Comment=Control the independent DTS:X-inspired PipeWire DSP chain
+Exec=dts-control-center
+Icon=dts-control-center
+Categories=AudioVideo;Audio;Utility;
+Terminal=false
